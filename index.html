@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="alert_angkot">
+  <div class="alert_angkot_content">
+    <span class="close_alert">&times;</span>
+    <img class="Picture_alert" src="source/Destination1.webp" alt="Picture_alert"/>
+    <p class="nama_sopir">Nama Sopir: Fachri</p>
+    <ul class="list_user">
+      <p>List....</p>
+    </ul>
+    <p class="kas">Kas: Rp 0,000</p>
+  </div>
+</div>
+  
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <img class="logo" src="source/Logo1.webp" alt="" />
+  <ul class="nav-link">
+    <li><a href="#">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="#">contact</a></li>
+  </ul>
+</nav>
+<!-- Navbar end -->
+
+<!-- Page -->
+<div class="page">
+  <h1>Sistem Pengelolaan Angkot.</h1>
+  <div class="angkot">
+    <div class="card_angkot">
+      <img class="card_picture_angkot" src="source/Destination1.webp" alt="" />
+      <p class="card_name_angkot">Angkot 1</p>
+      <p class="card_angkot_destination">Medono - Pekajangan</p>
+      <button class="card_pessenger_list">Pessenger</button>
+    </div>
+  </div>
+  <form class="formulir_penumpang_naik">
+    <h2>Naik Angkot</h2>
+    <label for="name_penumpang" class="label1">
+      <p class="title">Nama: </p>
+      <input type="text" name="name_penumpang" id="name_penumpang"/>
+    </label>
+    <label for="select_destination">
+      <p class="title">Destination: </p>
+      <select name="select_destination" id="select_destination">
+      <option value="Destination_1">Destination_1</option>
+      <option value="Destination_2">Destination_2</option>
+      <option value="Destination_3">Destination_3</option>
+      <option value="Destination_4">Destination_4</option>
+    </select>
+    </label>
+    <button type="submit" id="submit_formulir_penumpang">Kirim</button>
+  </form>
+  <form class="formulir_penumpang_turun">
+    <h2>Turun Angkot</h2><br>
+    <label for="name_user">
+      <p class="title">Nama: </p> <input type="text" name="name_user" id="name_user"/>
+    </label><br><br>
+    <label for="bayar">
+      <p class="title">Bayar: </p>
+      <input type="number" name="bayar" id="bayar"/>
+    </label>
+    <button type="submit" id="close_pessenger">Kirim</button>
+  </form>
+</div>
+<!-- Page end -->
+
+<!-- footer -->
+<footer class="footer">
+  <p>Created by <a href="https://github.com/MuchammadFachriSyakur">Muchammad Fachri Syakur</a></p>
+</footer>
+<!-- footer end -->
+
+<script src="App.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
